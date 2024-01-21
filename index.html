@@ -11,30 +11,104 @@
     <script src="https://kit.fontawesome.com/da2ed35434.js" crossorigin="anonymous"></script>
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        price: '#FABE4C',
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 
 <body>
-    <header class="container mx-auto">
+    <header class=" bg-amber-100">
         <!-- nav section -->
         <!-- banner section -->
-        <div>
-            <div>
-              <h1 class="text-7xl font-semibold text-amber-300"> <span>BE THE PENGUINS </span>
-                <br>
-                OF WINTER</h1>
-              <P>Lorem Ipsum is simply dummy text of the printing 
-                and typesetting industry.</P>
-            <button class=" rounded-lg text-white py-4 px-8 uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] "> <i class="fa-solid fa-cart-shopping"></i> buy now</button>
+        <div class="container mx-auto  md:flex   justify-between  items-center mt-12 py-12">
+            <div class="space-y-4 px-4">
+                <h1 class="text-7xl font-semibold "><span class="text-amber-300 space-x-4 "> BE THE PENGUINS </span>
+                    <br>
+                    OF WINTER
+                </h1>
+                <P>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</P>
+                <button
+                    class=" rounded-lg text-white py-4 px-8 uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] "> <i
+                        class="fa-solid fa-cart-shopping"></i> buy now</button>
             </div>
             <div>
-                <img src="images/model.png" alt="">
+                <img class="w-100 md:w-full pe-14" src="images/model.png" alt="">
             </div>
         </div>
 
     </header>
-    <main>
-
+    <main class=" container mx-auto ">
+        <!-- women jacket section -->
+        <section class="mt-12">
+            <h1 class=" px-4 text-5xl uppercase  font-semibold pb-20">Woman Jacket</h1>
+            <div class=" grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 ">
+            <div class="space-y-4  rounded-2xl  p-4 pb-20 ">
+                <div class="bg-slate-100 p-4 rounded-2xl ">
+                    <img src="images/jacket-1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-xl font-semibold">Yellow Coat Jacket</h1>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        <br>
+                        printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <h1 class="text-5xl text-price  font-semibold">$234</h1>
+                    <button
+                        class=" rounded-lg text-white py-4 px-8 uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">
+                        <i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                </div>
+            </div>
+            <div class="space-y-4  p-4  rounded-2xl ">
+                <div class="bg-slate-100 p-4 rounded-2xl">
+                    <img src="images/jacket-2.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-xl font-semibold">Yellow Coat Jacket</h1>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        <br>
+                        printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <h1 class="text-5xl text-price  font-semibold">$234</h1>
+                    <button
+                        class=" rounded-lg text-white py-4 px-8 uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">
+                        <i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                </div>
+            </div>
+            <div class="space-y-4  p-4 rounded-2xl ">
+                <div class="bg-slate-100 p-4 rounded-2xl">
+                    <img src="images/jacket-3.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-xl font-semibold">Yellow Coat Jacket</h1>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        <br>
+                        printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <h1 class="text-5xl text-price  font-semibold">$234</h1>
+                    <button
+                        class=" rounded-lg text-white py-4 px-8 uppercase bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">
+                        <i class="fa-solid fa-cart-shopping"></i> buy now</button>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
     <footer>
 
